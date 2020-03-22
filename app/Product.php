@@ -28,7 +28,6 @@ class Product extends Model
         'category_id',
         'type_id',
         'image_id',
-        'preference'
     ];
 
     protected $appends = [

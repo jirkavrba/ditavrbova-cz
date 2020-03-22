@@ -1,63 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a191e874-a39f-4716-90c8-c8c70b463f02" name="Default Changelist" comment="Login">
-      <change afterPath="$PROJECT_DIR$/app/AdditionalProductImage.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/AdditionalProductImageController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/AdministrationController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/ApiController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/ApplicationController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/AuthenticationController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/ProductCategoryController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/ProductImageController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/ProductTypeController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/Authentication/LoginRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/ProductCategories/DeleteProductCategoryRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/ProductCategories/StoreProductCategoryRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/ProductCategories/UpdateProductCategoryRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/ProductImages/StoreProductImageRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/ProductTypes/DeleteProductTypeRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/ProductTypes/StoreProductTypeRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/ProductTypes/UpdateProductTypeRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/Products/StoreProductRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Product.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/ProductCategory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/ProductImage.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/ProductType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_03_21_130447_create_product_images_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_03_21_130458_create_product_categories_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_03_21_130504_create_product_types_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_03_21_130513_create_products_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_03_21_131922_create_additional_product_images_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/administration.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/authentication/login.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/categories/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/categories/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/categories/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/images/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/images/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/layout.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/products/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/products/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/products/images.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/products/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/products/show.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/types/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/types/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/types/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="a191e874-a39f-4716-90c8-c8c70b463f02" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/views/application.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/Authenticate.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/Authenticate.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/RedirectIfAuthenticated.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/RedirectIfAuthenticated.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ApiController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ApiController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ApplicationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ApplicationController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Product.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -219,7 +172,7 @@
       <workItem from="1584727737042" duration="3478000" />
       <workItem from="1584778933155" duration="1568000" />
       <workItem from="1584780517997" duration="37643000" />
-      <workItem from="1584867651109" duration="10476000" />
+      <workItem from="1584867651109" duration="13998000" />
     </task>
     <task id="LOCAL-00001" summary="smaller perviews in administration">
       <created>1584642953755</created>
@@ -235,7 +188,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584729877663</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Complete CRUD implementation">
+      <created>1584879966906</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1584879966906</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -245,7 +205,8 @@
     <MESSAGE value="Fix missing categories" />
     <MESSAGE value="smaller perviews in administration" />
     <MESSAGE value="Change theme to superhero" />
-    <option name="LAST_COMMIT_MESSAGE" value="Change theme to superhero" />
+    <MESSAGE value="Complete CRUD implementation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Complete CRUD implementation" />
   </component>
   <component name="WindowStateProjectService">
     <state x="717" y="91" width="478" height="855" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1584797891439">
@@ -256,10 +217,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="693" y="278" width="526" height="481" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584866509739" />
-    <state x="586" y="120" width="740" height="799" key="CommitChangelistDialog2" timestamp="1584790557422">
+    <state x="586" y="120" width="740" height="799" key="CommitChangelistDialog2" timestamp="1584879966722">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="586" y="120" width="740" height="799" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1584790557422" />
+    <state x="586" y="120" width="740" height="799" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1584879966722" />
     <state x="743" y="278" width="426" height="483" key="FileChooserDialogImpl" timestamp="1584643453674">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -272,25 +233,25 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="464" y="155" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1584864782106" />
-    <state x="555" y="256" width="802" height="527" key="Vcs.Push.Dialog.v2" timestamp="1584729879050">
+    <state x="555" y="256" width="802" height="527" key="Vcs.Push.Dialog.v2" timestamp="1584879968151">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="555" y="256" width="802" height="527" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1584729879050" />
+    <state x="555" y="256" width="802" height="527" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1584879968151" />
     <state x="655" y="347" key="com.intellij.ide.util.TipDialog" timestamp="1584626903438">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="655" y="347" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584626903438" />
-    <state x="613" y="139" width="685" height="762" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1584865941508">
+    <state x="613" y="139" width="685" height="762" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1584881295152">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="613" y="139" width="685" height="762" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1584865941508" />
+    <state x="613" y="139" width="685" height="762" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1584881295152" />
     <state x="623" y="238" key="run.anything.popup" timestamp="1584815180399">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="623" y="238" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1584815180399" />
-    <state x="623" y="229" width="672" height="678" key="search.everywhere.popup" timestamp="1584879924089">
+    <state x="623" y="229" width="672" height="678" key="search.everywhere.popup" timestamp="1584882722986">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="229" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1584879924089" />
+    <state x="623" y="229" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1584882722986" />
   </component>
 </project>

@@ -10,7 +10,6 @@ use App\ProductImage;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
-use function GuzzleHttp\Psr7\parse_header;
 
 class ProductController extends Controller
 {

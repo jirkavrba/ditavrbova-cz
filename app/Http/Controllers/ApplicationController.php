@@ -2,13 +2,24 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+use App\Product;
+use App\ProductCategory;
 use Illuminate\Http\Response;
 
 class ApplicationController extends Controller
 {
     public function index(): Response
     {
-        return response()->view('application');
+        $data = [
+            'products' => Product::with(
+                'image',
+                'additionalImages',
+                'category',
+                'type'
+            )->sorted(),
+            'categories' => ProductCategory::with('types')->get(),
+        ];
+
+        return response()->view('application', $data);
     }
 }
