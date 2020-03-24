@@ -8,10 +8,28 @@
     <link rel="stylesheet" href="{{ mix('css/app.css') }}">
 </head>
 <body>
-    <script>
-        const products = {!! json_encode($products, JSON_PRETTY_PRINT) !!}
-        const categories = {!! json_encode($categories, JSON_PRETTY_PRINT) !!}
-    </script>
+    <h1>Výpis kategorií</h1>
+    <ol>
+        @foreach($categories as $category)
+            <li>
+                <h2>{{ $category->name }}</h2>
+                <ol>
+                    @foreach($category->types as $type)
+                        <li>{{ $type->name }}</li>
+                    @endforeach
+                </ol>
+            </li>
+        @endforeach
+    </ol>
+    <h1>Výpis produktů</h1>
+    <ol>
+        @foreach($products as $product)
+            <li>
+                <h2>{{ $product->name }}</h2>
+                <img src="{{ $product->imageUrl }}" style="width: 100px; height: 100px;">
+            </li>
+        @endforeach
+    </ol>
     <script src="{{ mix('js/app.js') }}"></script>
 </body>
 </html>

@@ -17,18 +17,20 @@
                 <div class="my-2">
                     <h4>Kategorie {{ $category->name }}</h4>
                     <div class="row">
-                        @foreach ($types->get($category->id) as $type)
-                            <div class="col-sm-4">
-                                <div class="card">
-                                    <div class="card-body">
-                                        {{ $type->name }}
-                                    </div>
-                                    <div class="card-footer">
-                                        <a  href="{{ route('types.edit', $type) }}" class="btn btn-block btn-primary">Upravit</a>
+                        @if (is_iterable($type->get($category->id)))
+                            @foreach ($types->get($category->id) as $type)
+                                <div class="col-sm-4">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            {{ $type->name }}
+                                        </div>
+                                        <div class="card-footer">
+                                            <a  href="{{ route('types.edit', $type) }}" class="btn btn-block btn-primary">Upravit</a>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        @endforeach
+                            @endforeach
+                        @endif
                     </div>
                 </div>
             </div>

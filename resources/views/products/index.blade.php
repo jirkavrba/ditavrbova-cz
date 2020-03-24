@@ -17,7 +17,7 @@
         @forelse($products as $product)
             <div class="col-sm-3">
                 <div class="card mb-4">
-                    <img class="card-img-top" src="{{ optional($product->image)->url }}" alt="{{ $product->name }}"/>
+                    <img class="card-img-top" src="{{ $product->imageUrl }}" alt="{{ $product->name }}"/>
                     <div class="card-body">
                         {{ $product->name }}
                     </div>
