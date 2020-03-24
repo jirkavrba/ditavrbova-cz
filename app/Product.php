@@ -70,7 +70,7 @@ class Product extends Model
 
     public function type(): BelongsTo
     {
-        return $this->belongsTo(ProductCategory::class, 'type_id', 'id');
+        return $this->belongsTo(ProductType::class, 'type_id', 'id');
     }
 
     public function generateSlug(): void
