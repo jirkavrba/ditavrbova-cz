@@ -20,7 +20,7 @@
                         @if (is_iterable($types->get($category->id)))
                             @foreach ($types->get($category->id) as $type)
                                 <div class="col-sm-4">
-                                    <div class="card">
+                                    <div class="card mb-4">
                                         <div class="card-body">
                                             {{ $type->name }}
                                         </div>
