@@ -215,10 +215,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="693" y="278" width="526" height="481" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584866509739" />
-    <state x="586" y="120" width="740" height="799" key="CommitChangelistDialog2" timestamp="1584879966722">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="586" y="149" width="740" height="799" key="CommitChangelistDialog2" timestamp="1585074451416">
+      <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="586" y="120" width="740" height="799" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1584879966722" />
+    <state x="586" y="149" key="CommitChangelistDialog2/0.27.1920.1053@0.27.1920.1053" timestamp="1585074451416" />
     <state x="743" y="278" width="426" height="483" key="FileChooserDialogImpl" timestamp="1584643453674">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -231,10 +232,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="464" y="155" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1584864782106" />
-    <state x="555" y="256" width="802" height="527" key="Vcs.Push.Dialog.v2" timestamp="1584879968151">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="555" y="286" width="802" height="527" key="Vcs.Push.Dialog.v2" timestamp="1585074453247">
+      <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="555" y="256" width="802" height="527" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1584879968151" />
+    <state x="555" y="286" key="Vcs.Push.Dialog.v2/0.27.1920.1053@0.27.1920.1053" timestamp="1585074453247" />
     <state x="655" y="347" key="com.intellij.ide.util.TipDialog" timestamp="1584626903438">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

@@ -17,7 +17,7 @@
                 <div class="my-2">
                     <h4>Kategorie {{ $category->name }}</h4>
                     <div class="row">
-                        @if (is_iterable($type->get($category->id)))
+                        @if (is_iterable($types->get($category->id)))
                             @foreach ($types->get($category->id) as $type)
                                 <div class="col-sm-4">
                                     <div class="card">
