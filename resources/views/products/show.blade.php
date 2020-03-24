@@ -53,11 +53,11 @@
                             <div class="row">
                                 <div class="col-sm-6">
                                     <small>Kategorie</small>
-                                    <p>{{ $product->category->name }}</p>
+                                    <p>{{ optional($product->category)->name ?? "Error" }}</p>
                                 </div>
                                 <div class="col-sm-6">
                                     <small>Typ</small>
-                                    <p>{{ $product->type->name }}</p>
+                                    <p>{{ optional($product->type)->name ?? "Error" }}</p>
                                 </div>
                             </div>
                         </div>
