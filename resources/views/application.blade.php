@@ -27,6 +27,9 @@
             <li>
                 <h2>{{ $product->name }}</h2>
                 <img src="{{ $product->imageUrl }}" style="width: 100px; height: 100px;">
+                @foreach($product->additionalImages as $image)
+                    <img src="{{ $image->url }}" style="width: 60px; height: 60px;">
+                @endforeach
             </li>
         @endforeach
     </ol>
