@@ -1,0 +1,1 @@
+This file ensures, that the heroku dyno won't fall asleep even on the free tier.

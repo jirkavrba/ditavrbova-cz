@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a191e874-a39f-4716-90c8-c8c70b463f02" name="Default Changelist" comment="">
+    <list default="true" id="a191e874-a39f-4716-90c8-c8c70b463f02" name="Default Changelist" comment="wake my dyno textfile">
+      <change afterPath="$PROJECT_DIR$/public/wakemydyno.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/application.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/application.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/products/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/products/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/types/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/types/index.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -171,6 +169,8 @@
       <workItem from="1584867651109" duration="13998000" />
       <workItem from="1585068910080" duration="678000" />
       <workItem from="1585073227070" duration="1165000" />
+      <workItem from="1585159178824" duration="368000" />
+      <workItem from="1585159575297" duration="426000" />
     </task>
     <task id="LOCAL-00001" summary="smaller perviews in administration">
       <created>1584642953755</created>
@@ -204,7 +204,8 @@
     <MESSAGE value="smaller perviews in administration" />
     <MESSAGE value="Change theme to superhero" />
     <MESSAGE value="Complete CRUD implementation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Complete CRUD implementation" />
+    <MESSAGE value="wake my dyno textfile" />
+    <option name="LAST_COMMIT_MESSAGE" value="wake my dyno textfile" />
   </component>
   <component name="WindowStateProjectService">
     <state x="717" y="91" width="478" height="855" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1584797891439">
@@ -215,11 +216,12 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="693" y="278" width="526" height="481" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584866509739" />
-    <state x="586" y="149" width="849" height="875" key="CommitChangelistDialog2" timestamp="1585074535708">
-      <screen x="0" y="27" width="1920" height="1053" />
+    <state x="586" y="150" width="849" height="867" key="CommitChangelistDialog2" timestamp="1585159911263">
+      <screen x="0" y="28" width="1920" height="1052" />
     </state>
     <state x="586" y="120" width="740" height="799" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1584879966722" />
     <state x="586" y="149" width="849" height="875" key="CommitChangelistDialog2/0.27.1920.1053@0.27.1920.1053" timestamp="1585074535708" />
+    <state x="586" y="150" width="849" height="867" key="CommitChangelistDialog2/0.28.1920.1052@0.28.1920.1052" timestamp="1585159911263" />
     <state x="743" y="278" width="426" height="483" key="FileChooserDialogImpl" timestamp="1584643453674">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -228,19 +230,21 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="754" y="339" width="403" height="359" key="NewPhpClassDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584798345969" />
-    <state x="464" y="155" key="SettingsEditor" timestamp="1584864782106">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="464" y="185" key="SettingsEditor" timestamp="1585160000735">
+      <screen x="0" y="28" width="1920" height="1052" />
     </state>
     <state x="464" y="155" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1584864782106" />
+    <state x="464" y="185" key="SettingsEditor/0.28.1920.1052@0.28.1920.1052" timestamp="1585160000735" />
     <state x="555" y="286" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1585074538259">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="555" y="256" width="802" height="527" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1584879968151" />
     <state x="555" y="286" width="800" height="535" key="Vcs.Push.Dialog.v2/0.27.1920.1053@0.27.1920.1053" timestamp="1585074538259" />
-    <state x="655" y="347" key="com.intellij.ide.util.TipDialog" timestamp="1584626903438">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="655" y="378" key="com.intellij.ide.util.TipDialog" timestamp="1585159179908">
+      <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="655" y="347" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584626903438" />
+    <state x="655" y="378" key="com.intellij.ide.util.TipDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1585159179908" />
     <state x="613" y="139" width="685" height="762" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1584881295152">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -249,10 +253,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="623" y="238" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1584815180399" />
-    <state x="623" y="259" width="672" height="687" key="search.everywhere.popup" timestamp="1585074346090">
-      <screen x="0" y="27" width="1920" height="1053" />
+    <state x="623" y="260" width="672" height="687" key="search.everywhere.popup" timestamp="1585159509362">
+      <screen x="0" y="28" width="1920" height="1052" />
     </state>
     <state x="623" y="229" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1584882722986" />
     <state x="623" y="259" width="672" height="687" key="search.everywhere.popup/0.27.1920.1053@0.27.1920.1053" timestamp="1585074346090" />
+    <state x="623" y="260" width="672" height="687" key="search.everywhere.popup/0.28.1920.1052@0.28.1920.1052" timestamp="1585159509362" />
   </component>
 </project>
