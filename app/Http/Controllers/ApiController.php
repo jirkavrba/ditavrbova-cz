@@ -84,6 +84,7 @@ class ApiController extends Controller
                 'type' => $product->type_id,
                 'slug' => $product->slug,
                 'images' => collect($product->imageUrl)->concat($product->additionalImages->pluck('url'))
-            ]);
+            ])
+            ->values();
     }
 }
