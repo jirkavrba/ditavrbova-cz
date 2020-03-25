@@ -41,7 +41,12 @@ class Product extends Model
 
     public function scopeSorted(Builder $query): Collection
     {
-        return $query->orderBy('preference', 'desc')->get();
+        return $this->scopeSortByPreference($query)->get();
+    }
+
+    public function scopeSortByPreference(Builder $query): Builder
+    {
+        return $query->orderBy('preference', 'desc');
     }
 
     public function additionalImages(): HasManyThrough
