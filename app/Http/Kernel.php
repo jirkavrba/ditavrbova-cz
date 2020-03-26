@@ -42,6 +42,7 @@ class Kernel extends HttpKernel
         'api' => [
             \Fruitcake\Cors\HandleCors::class,
             \Illuminate\Routing\Middleware\SubstituteBindings::class,
+            \App\Http\Middleware\DebugMiddleware::class,
         ],
     ];
 
