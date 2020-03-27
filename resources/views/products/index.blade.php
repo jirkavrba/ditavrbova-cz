@@ -19,7 +19,7 @@
                 <div class="card mb-4">
                     <img class="card-img-top" src="{{ $product->imageUrl }}" alt="{{ $product->name }}"/>
                     <div class="card-body">
-                        <span class="badge badge-primary mr-2">{{ $product->id }}</span>
+                        <span class="badge badge-primary mr-2">{{ str_pad($product->id, 3, '0', STR_PAD_LEFT) }}</span>
                         {{ $product->name }}
                     </div>
                     <div class="card-footer">
