@@ -19,6 +19,7 @@
                 <div class="card mb-4">
                     <img class="card-img-top" src="{{ $product->imageUrl }}" alt="{{ $product->name }}"/>
                     <div class="card-body">
+                        <span class="badge badge-primary mr-2">{{ $product->id }}</span>
                         {{ $product->name }}
                     </div>
                     <div class="card-footer">

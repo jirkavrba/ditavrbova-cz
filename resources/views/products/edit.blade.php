@@ -101,6 +101,9 @@
                                 </div>
                             </div>
                             <div class="col-sm-12">
+                                <button class="btn btn-block btn-primary">Přidat</button>
+                            </div>
+                            <div class="col-sm-12">
                                 <div class="form-group">
                                     <label for="image">Hlavní obrázek</label>
                                     <select name="image" id="image" required>
