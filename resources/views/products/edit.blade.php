@@ -101,7 +101,7 @@
                                 </div>
                             </div>
                             <div class="col-sm-12">
-                                <button class="btn btn-block btn-primary">Přidat</button>
+                                <button class="btn btn-block btn-primary">Uložit</button>
                             </div>
                             <div class="col-sm-12">
                                 <div class="form-group">
