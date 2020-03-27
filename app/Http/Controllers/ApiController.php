@@ -15,8 +15,6 @@ use stdClass;
 
 class ApiController extends Controller
 {
-    private const PRODUCTS_PER_PAGE = 15;
-
     public function categories()
     {
         return response()->json(ProductCategory::with('types')->get());
@@ -39,9 +37,10 @@ class ApiController extends Controller
         return response()->json($data);
     }
 
-    public function products(int $page = 1): JsonResponse
+    public function products(): JsonResponse
     {
-        $products = $this->format(Product::with('additionalImages', 'image')->sorted(), $page);
+        $products = Product::with('additionalImages', 'image')->sorted();
+        $products = $this->format($products);
 
         if ($products->isEmpty()) {
             throw new ModelNotFoundException();
@@ -50,10 +49,10 @@ class ApiController extends Controller
         return response()->json($products);
     }
 
-    public function category(ProductCategory $category, int $page = 1)
+    public function category(ProductCategory $category)
     {
         $products = $category->products()->with('additionalImages', 'image')->get();
-        $products = $this->format($products, $page);
+        $products = $this->format($products);
 
         if ($products->isEmpty()) {
             throw new ModelNotFoundException();
@@ -62,10 +61,10 @@ class ApiController extends Controller
         return response()->json($products);
     }
 
-    public function type(ProductType $type, int $page = 1)
+    public function type(ProductType $type)
     {
         $products = $type->products()->with('additionalImages', 'image')->get();
-        $products = $this->format($products, $page);
+        $products = $this->format($products);
 
         if ($products->isEmpty()) {
             throw new ModelNotFoundException();
@@ -74,10 +73,9 @@ class ApiController extends Controller
         return response()->json($products);
     }
 
-    private function format(Collection $products, int $page)
+    private function format(Collection $products)
     {
-        return $products->forPage($page, self::PRODUCTS_PER_PAGE)
-            ->map(fn(Product $product) => [
+        return $products->map(fn(Product $product) => [
                 'id' => $product->id,
                 'name' => $product->name,
                 'category' => $product->category_id,
