@@ -91,6 +91,22 @@
                     </div>
                 </div>
             </div>
+            <div class="card mt-3">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <small>Osobní poznámka</small>
+                            <form action="{{ route('products.note', $product) }}" method="post">
+                                @csrf
+                                <div class="form-group mt-2">
+                                    <textarea name="note" class="form-control">{{ $product->personal_note }}</textarea>
+                                </div>
+                                <button class="btn btn-primary">Uložit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 @endsection

@@ -132,6 +132,14 @@ class ProductController extends Controller
         return redirect()->back();
     }
 
+    public function addPersonalNote(Product $product, Request $request)
+    {
+        $product->personal_note = $request->input('note');
+        $product->save();
+
+        return redirect()->route('products.show', $product);
+    }
+
     /**
      * Remove the specified resource from storage.
      *

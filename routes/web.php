@@ -46,6 +46,7 @@ Route::group(['middleware' => Authenticate::class, 'prefix' => '/administrace'],
     Route::resource('products', ProductController::class);
 
     Route::get('/products/{product}/toggle-visibility', [ProductController::class, 'toggleVisibility'])->name('products.visibility');
+    Route::post('/products/{product}/add-personal-note', [ProductController::class, 'addPersonalNote'])->name('products.note');
 
     Route::get('/products/{product}/additional-images', [AdditionalProductImageController::class, 'create'])->name('additional-images.create');
     Route::post('/products/{product}/additional-images', [AdditionalProductImageController::class, 'store'])->name('additional-images.store');
