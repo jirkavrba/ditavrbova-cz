@@ -17,7 +17,8 @@
         @forelse($products as $product)
             <div class="col-sm-3">
                 <div class="card mb-4">
-                    <img class="card-img-top" src="{{ $product->imageUrl }}" alt="{{ $product->name }}"/>
+                    <img class="card-img-top" src="{{ $product->imageUrl }}" alt="{{ $product->name }}"
+                         @unless($product->visible) style="opacity: 0.5;" @endif/>
                     <div class="card-body">
                         <span class="badge badge-primary mr-2">{{ str_pad($product->id, 3, '0', STR_PAD_LEFT) }}</span>
                         {{ $product->name }}

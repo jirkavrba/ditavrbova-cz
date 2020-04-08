@@ -44,6 +44,11 @@ class Product extends Model
         return $this->scopeSortByPreference($query)->get();
     }
 
+    public function scopeVisible(Builder $query): Builder
+    {
+        return $query->where('visible', true);
+    }
+
     public function scopeSortByPreference(Builder $query): Builder
     {
         return $query->orderBy('preference', 'desc');

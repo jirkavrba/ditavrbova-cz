@@ -45,6 +45,8 @@ Route::group(['middleware' => Authenticate::class, 'prefix' => '/administrace'],
     Route::resource('images', ProductImageController::class)->only('index', 'create', 'store', 'destroy');
     Route::resource('products', ProductController::class);
 
+    Route::get('/products/{product}/toggle-visibility', [ProductController::class, 'toggleVisibility'])->name('products.visibility');
+
     Route::get('/products/{product}/additional-images', [AdditionalProductImageController::class, 'create'])->name('additional-images.create');
     Route::post('/products/{product}/additional-images', [AdditionalProductImageController::class, 'store'])->name('additional-images.store');
 

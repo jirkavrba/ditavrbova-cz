@@ -22,6 +22,11 @@ class ApiController extends Controller
 
     public function product(Product $product)
     {
+        if (!$product->visible)
+        {
+            throw new ModelNotFoundException();
+        }
+
         $data = [
             'id' => $product->id,
             'name' => $product->name,
@@ -39,36 +44,24 @@ class ApiController extends Controller
 
     public function products(): JsonResponse
     {
-        $products = Product::with('additionalImages', 'image')->sorted();
+        $products = Product::with('additionalImages', 'image')->visible()->sorted();
         $products = $this->format($products);
-
-        if ($products->isEmpty()) {
-            throw new ModelNotFoundException();
-        }
 
         return response()->json($products);
     }
 
     public function category(ProductCategory $category)
     {
-        $products = $category->products()->with('additionalImages', 'image')->get();
+        $products = $category->products()->with('additionalImages', 'image')->visible()->get();
         $products = $this->format($products);
-
-        if ($products->isEmpty()) {
-            throw new ModelNotFoundException();
-        }
 
         return response()->json($products);
     }
 
     public function type(ProductType $type)
     {
-        $products = $type->products()->with('additionalImages', 'image')->get();
+        $products = $type->products()->with('additionalImages', 'image')->visible()->get();
         $products = $this->format($products);
-
-        if ($products->isEmpty()) {
-            throw new ModelNotFoundException();
-        }
 
         return response()->json($products);
     }

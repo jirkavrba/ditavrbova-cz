@@ -124,14 +124,26 @@ class ProductController extends Controller
         return redirect()->route('products.show', $product);
     }
 
+    public function toggleVisibility(Product $product): RedirectResponse
+    {
+        $product->visible = !$product->visible;
+        $product->save();
+
+        return redirect()->back();
+    }
+
     /**
      * Remove the specified resource from storage.
      *
      * @param Product $product
-     * @return Response
+     * @return RedirectResponse
+     * @throws \Exception
      */
-    public function destroy(Product $product)
+    public function destroy(Product $product): RedirectResponse
     {
-        //
+        $product->additionalImages()->delete();
+        $product->delete();
+
+        return redirect()->route('products.index');
     }
 }

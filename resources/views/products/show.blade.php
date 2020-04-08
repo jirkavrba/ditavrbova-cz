@@ -16,6 +16,13 @@
                     <a href="{{ route('products.edit', $product) }}" class="btn btn-primary">Upravit produkt</a>
                     <a href="{{ route('additional-images.create', $product) }}" class="btn btn-dark">Nastavení
                         doplňujících obrázků</a>
+                    <a href="{{ route('products.visibility', $product) }}" class="btn btn-dark">
+                        @if ($product->visible)
+                            Skrýt produkt
+                        @else
+                            Zobrazit produkt
+                        @endif
+                    </a>
                     <div class="float-right">
                         <form action="{{ route('products.destroy', $product) }}" method="post">
                             @csrf
@@ -30,7 +37,8 @@
     <div class="row">
         <div class="col-sm-6">
             <div class="card">
-                <img src="{{ $product->imageUrl }}" class="card-img-top">
+                <img src="{{ $product->imageUrl }}" class="card-img-top"
+                    @unless($product->visible) style="opacity: 0.5;" @endunless>
                 <div class="card-body">
                     @forelse($product->additionalImages as $image)
                         <img src="{{ $image->url }}" style="width: 80px; height: 80px; margin-right: 10px; margin-bottom: 10px;">
