@@ -16,6 +16,7 @@ class AdditionalProductImageController extends Controller
     {
         $data = [
             'product' => $product,
+            'selected' => $product->additionalImages->pluck('id'),
             'images' => ProductImage::all(),
         ];
 

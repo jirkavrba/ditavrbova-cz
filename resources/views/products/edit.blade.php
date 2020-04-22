@@ -78,10 +78,10 @@
                                 <div class="form-group">
                                     <label for="preference">Preferenční koeficient</label>
                                     <select name="preference" id="preference" class="form-control">
-                                        @for($i = 1; $i < 6; $i++)
+                                        @for($i = 1; $i <= 12; $i++)
                                             <option
                                                 {{ $product->preference == $i ? 'selected' : '' }}
-                                                value="{{ $i }}">{!! str_repeat("&bigstar;", $i) !!}</option>
+                                                value="{{ $i }}">{{ $i }}</option>
                                         @endfor
                                     </select>
                                 </div>

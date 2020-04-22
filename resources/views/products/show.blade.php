@@ -54,7 +54,7 @@
                     <div class="row">
                         <div class="col-sm-12">
                             <small>Preferenční koeficient</small>
-                            <p>{!! str_repeat('&bigstar;', $product->preference) !!}</p>
+                            <p>{{ $product->preference }}</p>
                         </div>
                         <div class="col-sm-12">
                             <hr>

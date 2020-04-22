@@ -36,15 +36,20 @@
     <form action="{{ route('additional-images.store', $product) }}" method="post" class="mt-2">
         @csrf
         <div class="row">
+            <div class="col-sm-12">
+                <button class="mt-2 btn btn-primary btn-block">Uložit</button>
+            </div>
             <div class="col-sm-12 pt-4">
                 <select name="images[]" id="images" multiple>
                     @foreach($images as $image)
-                        <option value="{{ $image->id }}" data-img-src="{{ $image->url }}"></option>
+                        <option value="{{ $image->id }}" data-img-src="{{ $image->url }}"
+                            @if ($selected->contains($image->id)) selected @endif
+                        ></option>
                     @endforeach
                 </select>
             </div>
             <div class="col-sm-12">
-                <button class="mt-2 btn btn-primary">Uložit</button>
+                <button class="mt-2 btn btn-primary btn-block">Uložit</button>
             </div>
         </div>
     </form>
