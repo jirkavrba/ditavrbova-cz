@@ -74,6 +74,7 @@ class ApiController extends Controller
                 'category' => $product->category_id,
                 'type' => $product->type_id,
                 'slug' => $product->slug,
+                'in_stock' => $product->in_stock,
                 'images' => collect($product->imageUrl)->concat($product->additionalImages->pluck('url'))
             ])
             ->values();
